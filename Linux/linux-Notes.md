@@ -1,442 +1,265 @@
-1. File operational commands
+## 1. File Operational Commands
 
-cat, cksum, cmp, cp, cut, diff, echo, head, ln, more, mv, rm, sort, tail, tar, touch, uniq and wc
+* cat: Concatenate and display file content.
+* cksum: Print CRC checksum and byte counts.
+* cmp: Compare two files byte by byte.
+* cp: Copy files and directories.
+* cut: Remove sections from each line of files.
+* diff: Compare files line by line.
+* echo: Display a line of text or string.
+* head: Output the first part of files.
+* ln: Create links between files.
+* more: View file content one screenful at a time.
+* mv: Move or rename files and directories.
+* rm: Remove files or directories.
+* sort: Sort lines of text files.
+* tail: Output the last part of files.
+* tar: Archive utility to pack/unpack files.
+* touch: Change file timestamps or create empty files.
+* uniq: Report or omit repeated lines.
+* wc: Print newline, word, and byte counts.
 
-2. Directory Operations Commands
+## 2. Directory Operations Commands
 
-cd, dir, dirname, dirs, du, find, mkdir, mount, pwd, rmdir
+* cd: Change the working directory.
+* dir: List directory contents.
+* dirname: Strip last component from file name.
+* dirs: Display the list of currently remembered directories.
+* du: Estimate file space usage.
+* find: Search for files in a directory hierarchy.
+* mkdir: Create new directories.
+* mount: Mount a file system.
+* pwd: Print name of current/working directory.
+* rmdir: Remove empty directories.
 
-3. File Permission and Ownership Commands
+## 3. File Permission and Ownership Commands
 
-chmod
-chown
-chgrp
+* chmod: Change file mode bits (permissions).
+* chown: Change file owner and group.
+* chgrp: Change group ownership.
 
-4. User Management Commands
+## 4. User Management Commands
 
-passwd
-username
-useradd
-usermod
-users
-who
-whoami
+* passwd: Change user password.
+* username: Dummy placeholder for target user identification.
+* useradd: Create a new user or update default new user information.
+* usermod: Modify a user account.
+* users: Print the user names of users currently logged in.
+* who: Show who is logged on.
+* whoami: Print effective user ID.
 
-5. Process Management Commands
+## 5. Process Management Commands
 
-kill
-ps
-top
-htop
-time
-watch
-vmstat
-uptime
+* kill: Send a signal to a process (usually to stop it).
+* ps: Report a snapshot of the current processes.
+* top: Display Linux processes in real-time.
+* htop: Interactive process viewer and system monitor.
+* time: Run programs and summarize system resource usage.
+* watch: Execute a program periodically, showing output fullscreen.
+* vmstat: Report virtual memory statistics.
+* uptime: Tell how long the system has been running.
 
-6. Networking Commands
+## 6. Networking Commands
 
-arp
-curl
-host
-hostid
-hostname
-hostnamectl
-ifconfig
-iftop
-ifup
-ip
-ipcrm
-ipcs
-iptables
-iptables-save
-iwconfig
-nc (netcat)
-netstat
-nmcli
-nslookup
-ping
-rcp
-route
-rsync
-scp
-ssh
-tracepath
-traceroute
-vnstat
-wget
+* arp: Manipulate the system ARP cache.
+* curl: Transfer data from or to a server.
+* host: DNS lookup utility.
+* hostid: Print the numeric identifier for the current host.
+* hostname: Show or set the system's host name.
+* hostnamectl: Control the system hostname.
+* ifconfig: Configure a network interface.
+* iftop: Display bandwidth usage on an interface by host.
+* ifup: Bring a network interface up.
+* ip: Show / manipulate routing, network devices, interfaces and tunnels.
+* ipcrm: Remove certain IPC resources.
+* ipcs: Provide information on IPC facilities.
+* iptables: Administration tool for IPv4 packet filtering and NAT.
+* iptables-save: Dump iptables rules to stdout.
+* iwconfig: Configure a wireless network interface.
+* nc (netcat): Arbitrary data transfer and network debugging.
+* netstat: Print network connections, routing tables, and interface statistics.
+* nmcli: Command-line tool for controlling NetworkManager.
+* nslookup: Query Internet name servers interactively.
+* ping: Send ICMP ECHO_REQUEST to network hosts.
+* rcp: Secure remote file copy (legacy).
+* route: Show / manipulate the IP routing table.
+* rsync: Fast, versatile, remote and local file-copying tool.
+* scp: Secure copy (remote file copy program).
+* ssh: OpenSSH SSH client (remote login program).
+* tracepath: Trace path to a network host discovering MTU along the way.
+* traceroute: Print the route packets trace to network host.
+* vnstat: Console-based network traffic monitor.
+* wget: Non-interactive network downloader.
 
-8. Package Management Commands
-Package management commands are used to install, update, upgrade, and remove software packages. They ensure proper dependency handling and keep the system up to date.
+## 8. Package Management Commands
 
-apt
-apt-get
-aptitude
-9. Job Scheduling Commands
-Job scheduling commands are used to schedule tasks for future or recurring execution. They help automate routine system jobs like backups, updates, and maintenance.
+* apt: Command-line interface for the package management system.
+* apt-get: APT package handling utility (low-level).
+* aptitude: High-level interface to the package manager.
 
-atd
-atrm
-atq
-batch
-cron
-crontab
-10. Disk and File System Commands
-Disk and file system commands are used to manage disks, partitions, and file systems. They help mount storage, check disk usage, and maintain data integrity.
+## 9. Job Scheduling Commands
 
-cfdisk
-df
-dosfsck
-dump
-dumpe2fs
-fdisk
-mount
-restore
-sync
-11. Hardware and System Information Commands
-These commands are used to display hardware details and system resource information. They help monitor CPU, memory, storage, and device-related data.
+* atd: Run jobs queued for later execution.
+* atrm: Delete jobs, identified by their job number.
+* atq: List the user's pending jobs.
+* batch: Execute commands when system load levels permit.
+* cron: Daemon to execute scheduled commands.
+* crontab: Maintain crontab files for individual users.
 
-acpi
-acpi_available
-acpid
-arch
-dmesg
-dmidecode
-dstat
-free
-hdparm
-hwclock
-iostat
-iotop
-lsusb
-lshw
-uname
-12. Compression and Archiving Commands
-Compression and archiving commands are used to compress, extract, and manage archived files. They help reduce storage usage and simplify file transfer.
+## 10. Disk and File System Commands
 
-ar
-bzcmp
-bzdiff
-bzgrep
-bzip2
-bzless
-bzmore
-gunzip
-gzip
-gzexe
-zip
-zdiff
-zgrep
-13. Text Processing and Formatting Commands
-Text processing commands are used to search, filter, format, and manipulate text data. They are widely used for log analysis, scripting, and data processing.
+* cfdisk: Display or manipulate a disk partition table with a text-user interface.
+* df: Report file system disk space usage.
+* dosfsck: Check and repair MS-DOS file systems.
+* dump: Ext2/3 file system backup.
+* dumpe2fs: Dump ext2/ext3/ext4 file system information.
+* fdisk: Manipulate disk partition table.
+* mount: Mount a file system.
+* restore: Restore files from a backup created by dump.
+* sync: Flush file system buffers.
 
-awk
-aspell
-banner
-bc
-col
-colcrt
-colrm
-column
-dc
-egrep
-fgrep
-fmt
-grep
-sdiff
-sed
-tr
-unix2dos
-14. Kernel and Module Management Commands
-Kernel and module management commands are used to load, remove, and manage kernel modules and system services. They help control low-level system functionality.
+## 11. Hardware and System Information Commands
 
-depmod
-insmod
-lsmod
-modinfo
-rmmod
-systemctl
-15. System Control and Power Commands
-System control commands are used to safely shut down, reboot, or power off the system. They help ensure proper system termination and data safety.
+* acpi: Shows battery status and other ACPI information.
+* acpi_available: Test whether ACPI subsystem is available.
+* acpid: Advanced Configuration and Power Interface event daemon.
+* arch: Print machine hardware name (same as uname -m).
+* dmesg: Print or control the kernel ring buffer.
+* dmidecode: Tool for dumping a computer's DMI table contents in human-readable format.
+* dstat: Versatile resource statistics tool.
+* free: Display amount of free and used memory in the system.
+* hdparm: Get/set SATA/IDE device parameters.
+* hwclock: Query or set the hardware clock (RTC).
+* iostat: Report Central Processing Unit (CPU) statistics and input/output statistics for devices.
+* iotop: Simple top-like I/O monitor.
+* lsusb: List USB devices.
+* lshw: List hardware configuration details.
+* uname: Print system information.
 
-halt
-poweroff
-reboot
-shutdown
-16. Logging and Monitoring Commands
-Logging and monitoring commands are used to view system logs and track system activity. They help diagnose issues, analyze usage, and audit system behavior.
+## 12. Compression and Archiving Commands
 
-journalctl
-last
-history
-sar
-script
-scriptreplay
-17. Checksum and File Integrity Commands
-These commands are used to verify file integrity using hash values. They help detect file corruption or unauthorized changes.
+* ar: Create, modify, and extract from archives.
+* bzcmp: Compare bzip2 compressed files.
+* bzdiff: Compare bzip2 compressed files line by line.
+* bzgrep: Search bzip2 compressed files for a regular expression.
+* bzip2: A block-sorting file compressor.
+* bzless: View bzip2 compressed text files screen by screen.
+* bzmore: View bzip2 compressed text files.
+* gunzip: Decompress files compressed with gzip.
+* gzip: Compress or expand files.
+* gzexe: Compress executable files in place.
+* zip: Package and compress (archive) files.
+* zdiff: Compare compressed files.
+* zgrep: Search compressed files for a regular expression.
 
-md5sum
-cksum
-sum
-18. Date and Time Commands
-Date and time commands are used to display and manage system date, time, and uptime. They help with time synchronization and system monitoring.
+## 13. Text Processing and Formatting Commands
 
-cal
-date
-uptime
-19. Mail and User Communication Commands
-Mail and communication commands are used for user messaging and system notifications. They help administrators communicate with users and manage mail queues.
+* awk: Pattern scanning and processing language.
+* aspell: Interactive spell checker.
+* banner: Print large banner text.
+* bc: An arbitrary precision calculator language.
+* col: Filter reverse line-feeds from input.
+* colcrt: Filter nroff output for CRT preview.
+* colrm: Remove columns from a file.
+* column: Columnate lists into neat tabular forms.
+* dc: An arbitrary precision calculator.
+* egrep: Search file(s) for an extended regular expression (grep -E).
+* fgrep: Search file(s) for a fixed-string regular expression (grep -F).
+* fmt: Simple optimal text formatter.
+* grep: Print lines matching a pattern.
+* sdiff: Side-by-side merge of file differences.
+* sed: Stream editor for filtering and transforming text.
+* tr: Translate or delete characters.
+* unix2dos: Convert text file format from ISO/Mac/Unix to MS-DOS.
 
-biff
-mailq
-write
-wall
-20. Printing and Media Commands
-Printing and media commands are used to manage audio, printing services, and media devices. They help control sound, printers, and removable media.
+## 14. Kernel and Module Management Commands
 
-amixer
-aplay
-aplaymidi
-cupsd
-eject
-import
-21. Shell Built-in and Scripting Commands
-Shell built-in commands are used for scripting, automation, and flow control within the shell. They help write efficient scripts and control command execution.
+* depmod: Generate modules.dep and map files.
+* insmod: Simple program to insert a module into the Linux Kernel.
+* lsmod: Show the status of modules in the Linux Kernel.
+* modinfo: Show information about a Linux Kernel module.
+* rmmod: Simple program to remove a module from the Linux Kernel.
+* systemctl: Control the systemd system and service manager.
 
-alias
-bind
-break
-builtin
-case
-continue
-declare
-enable
-env
-eval
-exec
-exit
-expect
-export
-expr
-factor
-fc
-function
-for
-if
-let
-printf
-read
-return
-select
-seq
-setsid
-shift
-source
-type
-until
-while
-yes
-sudo
-sleep
-Bash Shortcuts Commands:
-Bash shortcut commands are keyboard combinations used in the Linux terminal to quickly perform common actions without typing full commands. They help users work faster and more efficiently by improving navigation, editing, and command execution.
+## 15. System Control and Power Commands
 
-1. Navigation Shortcuts
-Used to move the cursor quickly within the command line.
+* halt: Instruct the hardware to stop all CPU functions.
+* poweroff: Send an ACPI command to power down the system.
+* reboot: Restart the system.
+* shutdown: Bring the system down securely.
 
-Ctrl + A : Move to the beginning of the line
-Ctrl + E : Move to the end of the line
-Ctrl + B : Move back one character
-Ctrl + F : Move forward one character
-Alt + B : Move back one word
-Alt + F : Move forward one word
-2. Editing Shortcuts
-Used to edit or modify the command line efficiently.
+## 16. Logging and Monitoring Commands
 
-Ctrl + U : Cut/delete text from the cursor to the beginning of the line
-Ctrl + K : Cut/delete text from the cursor to the end of the line
-Ctrl + W : Cut/delete the word before the cursor
-Ctrl + Y : Paste the last cut text
-Ctrl + L : Clear the terminal screen
-Ctrl + C : Terminate the currently running command
-3. History Shortcuts
-Used to search and navigate through previously executed commands.
+* journalctl: Query the systemd journal logs.
+* last: Show a list of last logged-in users.
+* history: GNU History Library command wrapper to view past executed terminal runs.
+* sar: Collect, report, or save system activity information.
+* script: Make typescript of terminal session.
+* scriptreplay: Play back typescripts created by script.
 
-Ctrl + R : Search command history (reverse search)
-Ctrl + G : Exit history search mode
-Ctrl + P : Go to the previous command in history
-Ctrl + N : Go to the next command in history
-22. Development and Build Automation Commands
-Development commands are used to compile, build, debug, and analyze programs. They support software development and build automation processes.
+## 17. Checksum and File Integrity Commands
 
-aclocal
-addr2line
-autoconf
-autoheader
-automake
-autoreconf
-autoupdate
-bison
-cc
-cpp
-ctags
-g++
-gcc
-gdb
-ranlib
-readelf
-23. Terminal and Session Management Commands
-Terminal and session management commands are used to manage terminal sessions and input/output behavior. They help control multiple sessions and terminal settings.
+* md5sum: Compute and check MD5 message digest.
+* cksum: Print CRC checksum and byte counts.
+* sum: Checksum and count the blocks in a file.
 
-agetty
-chvt
-reset
-screen
-showkey
-stty
-tty
-xdg-open
-24. Help and Documentation Commands
-Help and documentation commands are used to view manuals, usage guides, and command descriptions. They assist users in learning and understanding Linux commands.
+## 18. Date and Time Commands
 
-apropos
-help
-info
-man
-whatis
-which
-25. Text Editors in Linux
-Text editors are used to create and modify files from the terminal.
+* cal: Display a calendar.
+* date: Print or set the system date and time.
+* uptime: Tell how long the system has been running.
 
-1. nano
-nano is a simple and beginner-friendly text editor used in the terminal. It provides on-screen shortcuts, making it easy to edit files without prior experience.
+## 19. Mail and User Communication Commands
 
-2. vi
-vi is a powerful and lightweight text editor available on almost all Linux systems. It works in different modes, which allows efficient text editing using keyboard commands.
+* biff: Mail arrival notification tool.
+* mailq: Print the mail queue summary.
+* write: Send a message to another logged-in user.
+* wall: Write a message to all logged-in users.
 
-3. vim
-vim (Vi Improved) is an advanced version of vi with enhanced features like syntax highlighting and plugins. It is widely used by developers for fast and efficient coding.
+## 20. Printing and Media Commands
 
-4. ed
-ed is a line-based text editor and one of the oldest editors in Linux. It is mainly used for scripting and low-level text processing.
+* amixer: Command-line mixer for ALSA soundcard driver.
+* aplay: Command-line sound recorder and player for ALSA soundcard driver.
+* aplaymidi: Play standard MIDI files.
+* cupsd: Common UNIX Printing System daemon.
+* eject: Eject removable media.
+* import: Capture an X server screen and save it to file (ImageMagick tool).
 
-5. emacs
-emacs is a highly customizable and extensible text editor. It supports programming, scripting, email, and many other tasks beyond basic text editing.
+## 21. Shell Built-in and Scripting Commands
 
-Shortcuts Commands & Keys of Text Editors
-There are many shortcuts commands in Linux that can help you be more productive. Here are a few of the most common ones:
+* alias: Define or display aliases.
+* bind: Set or view Readline key bindings.
+* break: Exit from within a for, while, or until loop.
+* builtin: Run a shell builtin command instead of an executable program.
+* case: Multi-way conditional branch command.
+* continue: Skip the rest of the current iteration of a loop.
+* declare: Declare variables and give them attributes.
+* enable: Enable and disable builtin shell commands.
+* env: Run a program in a modified environment.
+* eval: Construct command by concatenating arguments.
+* exec: Replace the shell process with the specified command.
+* exit: Cause the shell to exit.
+* expect: Programmed dialogue automation tool.
+* export: Set an environment variable to be passed to child processes.
+* expr: Evaluate expressions.
+* factor: Factor numbers into primes.
+* fc: Format and execute commands from history list.
+* function: Define shell function blocks.
+* for: Loop construct for iterating over list components.
+* if: Conditional block statement.
+* let: Evaluate arithmetic expressions on shell variables.
+* printf: Format and print data.
+* read: Read a line from standard input.
+* return: Return from a shell function.
+* select: Generate conditional choices menus.
+* seq: Print a sequence of numbers.
+* setsid: Run a program in a new session.
+* shift: Shift positional parameters leftward.
+* source: Execute commands from a file in the current shell context.
+* type: Locate a command and describe its type classification.
+* until: Loop construct executing until an exit criteria evaluated true.
+* while: Loop construct executing while an exit condition evaluates true.
+* yes: Output a string repeatedly until killed.
+* sudo: Execute a command as another user (usually superuser).
+* sleep: Delay for a specified amount of time.
 
-1. Nano Shortcuts Commands:
-File Operations
-Used to open, save, and exit files.
-
-Ctrl + O – Save (write) the current file
-Ctrl + X – Exit Nano (prompts to save if the file is modified)
-Ctrl + R – Read and insert another file into the current buffer
-Navigation
-Used to move through the file quickly.
-
-Ctrl + Y – Scroll up one page
-Ctrl + V – Scroll down one page
-Alt + \ – Go to a specific line number
-Alt + , – Move to the beginning of the current line
-Alt + . – Move to the end of the current line
-Editing
-Used to modify text efficiently.
-
-Ctrl + K – Cut/delete text from the cursor to the end of the line
-Ctrl + U – Uncut (paste) the last cut text
-Ctrl + 6 – Mark a block of text for copying or cutting
-Alt + 6 – Copy the marked block of text
-Ctrl + K – Cut/delete the marked block of text
-Ctrl + J – Justify (format) the current paragraph
-Search and Replace
-Used to find and replace text in a file.
-
-Ctrl + W – Search for a string in the text
-Alt + W – Search and replace a string
-Alt + R – Repeat the last search
-2. VI/VIM Shortcuts Commands:
-Insert & Replace Mode Commands
-Used to enter insert mode or replace existing text.
-
-i – Switch to insert mode before the cursor
-a – Switch to insert mode after the cursor
-A – Switch to insert mode at the end of the current line
-o – Insert a new line below the current line and switch to insert mode
-R – Enter replace mode and overwrite characters until Esc is pressed
-r – Replace the character under the cursor with a single new character
-s – Substitute the character under the cursor and switch to insert mode
-S – Delete the current line and switch to insert mode
-C – Delete from the cursor to the end of the line and switch to insert mode
-Delete & Change Commands
-Used to remove or modify text efficiently.
-
-x – Delete the character under the cursor
-dd – Delete the current line
-3dd – Delete the current line and the next two lines
-D – Delete from the cursor to the end of the line
-dw – Delete from the cursor to the beginning of the next word
-4dw – Delete the next four words from the cursor position
-cw – Change the current word and switch to insert mode
-Undo & Restore Commands
-Used to revert changes.
-
-u – Undo the last change
-U – Restore the current line to its original state
-Case & Miscellaneous Commands
-Used for quick character-level edits.
-
-~ – Toggle the case of the character under the cursor
-Mode Control
-Used to switch between editing modes.
-
-Esc – Exit insert or command-line mode and return to command mode
-3. Vim Modes and Commands
-Normal Mode
-Used for navigation, deletion, copying, and undo/redo operations.
-
-i – Enter insert mode at the current cursor position
-x – Delete the character under the cursor
-dd – Delete the current line
-yy – Copy (yank) the current line
-p – Paste the copied or deleted text below the current line
-u – Undo the last change
-Ctrl + R – Redo the last undone change
-Command Mode (Last Line Mode)
-Used for saving files, quitting Vim, and performing advanced operations.
-
-:w – Save the file
-:q – Quit Vim
-:q! – Quit Vim without saving changes
-:wq or :x – Save and quit Vim
-:set nu or :set number – Display line numbers
-:s/old/new/g – Replace all occurrences of old with new in the file
-Visual Mode
-Used for selecting text to copy, delete, or modify.
-
-v – Enter visual mode to select text
-y – Copy (yank) the selected text
-d – Delete the selected text
-p – Paste the copied or deleted text
-26. IO Redirection Commands
-IO (Input/Output) redirection commands are used to redirect the standard input, output, and error streams of commands and processes. Here are some commonly used IO redirection commands:
-
-cmd < file : Redirects the input of cmd to be read from file instead of the keyboard.
-cmd > file : Redirects the standard output (stdout) of cmd to file, overwriting existing content.
-cmd >> file : Appends the standard output (stdout) of cmd to the end of file.
-cmd 2> file : Redirects the error output (stderr) of cmd to file.
-cmd 2>&1 : Redirects stderr to the same destination as stdout.
-cmd &> file : Redirects both stdout and stderr to file.
-cmd 1>&2 : Redirects stdout to the same destination as stderr.
-cmd > /dev/null : Discards the standard output by sending it to the null device.
-cmd1 <(cmd2) : Uses the output of cmd2 as an input file for cmd1 (process substitution).
-27. Environment Variable Commands
-Environment variables are used to store configuration settings, system information, and other variables that can be accessed by processes and shell scripts. Here are some commonly used environment variable commands:
-
-export VARIABLE_NAME=value : Sets and exports an environment variable so it is available to child processes.
-echo $VARIABLE_NAME : Displays the value of a specific environment variable.
-env : Lists all environment variables currently set in the system.
-unset VARIABLE_NAME : Removes or unsets an existing environment variable.
-export -p : Shows a list of all currently exported environment variables.
-env VAR1=value COMMAND : Sets an environment variable temporarily for a specific command execution.
-printenv : Displays the values of all environment variables or a specific one if provided.
