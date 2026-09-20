@@ -1,3 +1,5 @@
+![SQL_Execution_flow.png](../../OneDrive/Desktop/SQL/SQL_Execution_flow.png)
+
 Have you done any automatmation earlier?
 Yes.. I have worked on few automations to reduse time daily BAU activities. In one server we have every week deployments and for that we need to stop services manually everytime. So, i created script like PRE and POST patching. Before going to start deployment we can run that script giving parameter as PRE then it will stop the all services at a time and once deployement completed we need to run the same script again with parameter POSTthen it will start the all process automatically.
 
